@@ -1,0 +1,45 @@
+.box {
+  height: 100px;
+  width: 100px;
+  background-color: red;
+  border: solid 1px black;
+  display: inline-block;
+}
+
+.container {
+  height: 2000px;
+  width: 100vw;
+  background-color: pink;
+  /* position: relative; trick of positioning a child inside a parent */
+}
+/* position: relative */
+/* #box3 {
+  position: relative;
+  top: 100px; /* current pos ko top bata bottom tira 100px moved */
+/*
+} 
+
+#box4 {
+  position: relative;
+  right: 106px;
+}
+
+#box1 {
+  position: relative;
+  bottom: 10px;
+} */
+
+/* position: fixed */
+/* #box1 {
+  position: fixed;
+  top: 50px;
+  left: 50px;
+} */
+
+/* position: absolute */
+#box3 {
+  /* position: absolute; */
+  background-color: green;
+  position: sticky;
+  top: 20px;
+}
