@@ -7,8 +7,10 @@
 }
 
 .container {
-  height: 2000px;
-  width: 100vw;
+  /* height: 2000px; */
+  /* width: 100vw; */
+  height: 500px;
+  width: 700px;
   background-color: pink;
   /* position: relative; trick of positioning a child inside a parent */
 }
@@ -37,9 +39,36 @@
 } */
 
 /* position: absolute */
-#box3 {
-  /* position: absolute; */
-  background-color: green;
+/* #box3 { */
+/* position: absolute; */
+/* background-color: green;
   position: sticky;
   top: 20px;
+} */
+
+/* position text in all 4 corners and center of a div / container / img */
+.container {
+  position: relative;
+}
+
+.box {
+  position: absolute;
+}
+
+#box2 {
+  left: 600px;
+}
+
+#box3 {
+  top: 400px;
+}
+
+#box4 {
+  top: 400px;
+  left: 600px;
+}
+
+#box5 {
+  left: 300px;
+  top: 200px;
 }
