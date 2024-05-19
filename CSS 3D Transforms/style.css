@@ -1,0 +1,21 @@
+.wrapper {
+  height: 300px;
+  width: 300px;
+  border: solid 1px black;
+  margin: 150px auto;
+}
+
+.box {
+  height: 100%;
+  width: 100%;
+  background-color: aqua;
+
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+
+  /* transform: perspective(250px) rotateX(-45deg); */
+  /* transform: perspective(500px) rotateY(45deg); */
+  /* transform: rotateZ(-45deg); */
+}
