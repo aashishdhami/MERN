@@ -1,0 +1,53 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#wrapper {
+  height: 100vh;
+  perspective: 10px; /* Since we are working on 3D, value jati diyeni doesn't matter */
+  overflow-x: hidden; /* sideways scroll nahos */
+  overflow-y: auto;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  transform-style: preserve-3d; /* ensures the child will be rendered in 3D and not in a 2D plane. Images
+  (container ko child elements) ma 3D effects lyauna xa hence used. */
+  height: 100%;
+  position: relative;
+  /* z-index: -1; */
+}
+
+.background,
+.foreground {
+  position: absolute; /* images overlap garneii design ma baneko xan, absolute le chai parent container ko area
+  ma fix gardiyo images lai */
+  z-index: -1;
+  height: 100%;
+  width: 100%;
+}
+
+/* Creates parallax effect, dealing with Z-axis */
+.background {
+  transform: translateZ(-40px) scale(5);
+}
+
+.foreground {
+  transform: translateZ(-20px) scale(3);
+}
+
+h1 {
+  color: white;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 150px;
+  text-shadow: 3px 3px 5px black;
+  padding: 5px;
+
+  position: absolute;
+  top: 100px;
+}
